@@ -3,11 +3,10 @@
 // Definitions by: igrayson <https://github.com/igrayson>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference types="sinon"/>
+import * as s from "sinon";
 
-declare namespace Sinon {
-
-  export interface SinonStub {
+declare module "sinon" {
+  interface SinonStub {
 
     /**
      * When called, the stub will return a "thenable" object which will return a promise for the provided value. Any Promises/A+ compliant library will handle this object properly.
