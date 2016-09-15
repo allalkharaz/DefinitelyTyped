@@ -6,7 +6,9 @@
 /// <reference types="chai" />
 import Sinon = require("Sinon");
 
-declare var should: Chai.Should;
-declare var expect: Chai.ExpectStatic;
-declare var assert: Chai.AssertStatic;
-declare var sinon: Sinon.SinonStatic;
+declare global {
+    var should: Chai.Should;
+    var expect: Chai.ExpectStatic;
+    var assert: Chai.AssertStatic;
+    var sinon: Sinon.SinonStatic;
+}

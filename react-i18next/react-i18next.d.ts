@@ -5,11 +5,10 @@
 
 ///<reference types="react"/>
 ///<reference types="react-router"/>
+///<reference types="i18next"/>
 
 declare namespace ReactI18next {
-    import I18next = require("i18next");
-
-    export type TranslationFunction = I18next.TranslationFunction;
+    export type TranslationFunction = i18n.TranslationFunction;
 
     // Extend your component's Prop interface with this one to get access to `this.props.t`
     //

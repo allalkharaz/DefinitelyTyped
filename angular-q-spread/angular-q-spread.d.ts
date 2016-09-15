@@ -3,7 +3,7 @@
 // Definitions by: rafw87 <https://github.com/rafw87>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference path="../angularjs/angular.d.ts" />
+/// <reference types="angular" />
 
 declare module angular {
     interface IPromise<T> {

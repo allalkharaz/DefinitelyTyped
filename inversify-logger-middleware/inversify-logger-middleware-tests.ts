@@ -1,3 +1,6 @@
+import * as inversify from "inversify";
+import * as inversifyLoggerMiddleware from "inversify-logger-middleware";
+
 declare var kernel: inversify.interfaces.Kernel;
 
 import { makeLoggerMiddleware, textSerializer } from "inversify-logger-middleware";

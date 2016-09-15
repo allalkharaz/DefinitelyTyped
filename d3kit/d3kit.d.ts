@@ -116,7 +116,7 @@ declare namespace d3kit {
 
         constructor(container: d3.Selection<any>, tag?: string);
 
-        create(config: string|Array<string>|LayerConfig|Array<LayerConfig>): d3.Selection<any>|Array<d3.Selection<any>>;
+        create(config: string|Array<string>|LayerConfig|Array<LayerConfig>|any): d3.Selection<any>|Array<d3.Selection<any>>;
         get(name: string): d3.Selection<any>;
         has(name: string): boolean;
     }

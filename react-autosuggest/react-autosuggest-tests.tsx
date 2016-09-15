@@ -68,13 +68,13 @@ export class ReactAutosuggestBasicTest extends React.Component<any, any> {
     //endregion
 
     //region Event handlers
-    protected onChange(event: React.FormEvent, {newValue, method}): void {
+    protected onChange(event: React.FormEvent<any>, {newValue, method}: any): void {
         this.setState({
             value: newValue
         });
     }
 
-    protected onSuggestionsUpdateRequested({ value }): void {
+    protected onSuggestionsUpdateRequested({ value }: any): void {
         this.setState({
             suggestions: this.getSuggestions(value)
         });
@@ -192,13 +192,13 @@ export class ReactAutosuggestMultipleTest extends React.Component<any, any> {
     //endregion
 
     //region Event handlers
-    protected onChange(event: React.FormEvent, { newValue, method }): void {
+    protected onChange(event: React.FormEvent<any>, { newValue, method }: any): void {
         this.setState({
             value: newValue
         });
     }
 
-    protected onSuggestionsUpdateRequested({ value }): void {
+    protected onSuggestionsUpdateRequested({ value }: any): void {
         this.setState({
             suggestions: this.getSuggestions(value)
         });
@@ -280,7 +280,7 @@ export class ReactAutosuggestCustomTest extends React.Component<any, any> {
                             inputProps={inputProps} />;
     }
 
-    protected renderSuggestion(suggestion: IPerson, { value, valueBeforeUpDown }): JSX.Element {
+    protected renderSuggestion(suggestion: IPerson, { value, valueBeforeUpDown }: any): JSX.Element {
         const suggestionText = `${suggestion.first} ${suggestion.last}`;
         const query = (valueBeforeUpDown || value).trim();
         const parts =  suggestionText.split(' ').map((part: string) => {
@@ -305,13 +305,13 @@ export class ReactAutosuggestCustomTest extends React.Component<any, any> {
     //endregion
 
     //region Event handlers
-    protected onChange(event: React.FormEvent, {newValue, method}): void {
+    protected onChange(event: React.FormEvent<any>, {newValue, method}: any): void {
         this.setState({
             value: newValue
         });
     }
 
-    protected onSuggestionsUpdateRequested({ value }): void {
+    protected onSuggestionsUpdateRequested({ value }: any): void {
         this.setState({
             suggestions: this.getSuggestions(value)
         });

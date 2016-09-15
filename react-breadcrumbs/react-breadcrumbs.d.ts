@@ -22,7 +22,7 @@ declare namespace ReactBreadcrumbs {
         activeItemClass?: string;
         excludes?: string[];
         hideNoPath?: boolean;
-        routes: ReactRouter.RouteConfig;
+        routes: ReactRouter.Router.RouteConfig;
         setDocumentTitle?: boolean;
         params?: any;  // todo make it compatible with params of the ReactRouter.RouteComponentProps<P, R>
     }

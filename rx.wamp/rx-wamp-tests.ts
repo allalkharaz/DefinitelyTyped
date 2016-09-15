@@ -1,3 +1,6 @@
+/// <reference path="../rx/rx.all.d.ts" />
+import * as autobahn from "autobahn";
+
 function nodeJS(session: autobahn.Session) {
     var sessionObservable =
         Rx.Observable

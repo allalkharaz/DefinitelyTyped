@@ -14,7 +14,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "files": [
-        "inversify-inject-decorators.d.ts",
+        "index.d.ts",
         "inversify-inject-decorators-tests.ts"
     ]
 }

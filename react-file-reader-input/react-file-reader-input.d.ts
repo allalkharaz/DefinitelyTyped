@@ -8,7 +8,7 @@
 declare module "react-file-reader-input" {
     interface FileInputProps {
         as?: string;
-        onChange?: (event: React.SyntheticEvent, results: any) => void;
+        onChange?: (event: React.SyntheticEvent<any>, results: any) => void;
     }
 
     class FileInput extends React.Component<FileInputProps, {}> {

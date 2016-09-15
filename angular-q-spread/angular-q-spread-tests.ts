@@ -1,4 +1,4 @@
-// ///<reference types="angular"/>
+///<reference types="angular"/>
 ///<reference path="angular-q-spread.d.ts"/>
 
 interface IMyService {

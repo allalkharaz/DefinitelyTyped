@@ -245,7 +245,7 @@ declare namespace AdazzleReactDataGrid {
          * @param ev The react event
          * @param args The row and column coordinates of the cell, and the name of the event.
          */
-        (ev: React.SyntheticEvent, args: {rowIdx: number, idx: number, name: string}): void
+        (ev: React.SyntheticEvent<any>, args: {rowIdx: number, idx: number, name: string}): void
     }
 
     /**
@@ -311,7 +311,7 @@ declare namespace AdazzleReactDataGrid {
         /**
          * The double click event.
          */
-        e: React.SyntheticEvent
+        e: React.SyntheticEvent<any>
     }
 
     /**
@@ -411,8 +411,6 @@ declare namespace AdazzleReactDataGrid {
 }
 
 declare namespace AdazzleReactDataGridPlugins {
-    import React = __React;
-
     // TODO: refine types for these addons
     export namespace Editors {
         export class AutoComplete extends React.Component<any, {}> { }

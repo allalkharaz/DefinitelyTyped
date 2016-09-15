@@ -14,7 +14,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "files": [
-        "inversify-logger-middleware.d.ts",
+        "index.d.ts",
         "inversify-logger-middleware-tests.ts"
     ]
 }

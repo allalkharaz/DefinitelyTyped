@@ -44,7 +44,7 @@ class TestApp extends React.Component<{}, State> {
             ]}
             />;
 
-        return  <div id='test-app' class='.MyClass'>
+        return  <div id='test-app' classID='.MyClass'>
                     {Tour}
                 </div>;
     }

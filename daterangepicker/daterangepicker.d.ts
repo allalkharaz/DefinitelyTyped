@@ -6,9 +6,11 @@
 /// <reference types="jquery"/>
 import moment = require("moment");
 
-declare interface JQuery {
-    daterangepicker(settings?: daterangepicker.Settings): JQuery;
-    daterangepicker(settings?: daterangepicker.Settings, callback?: (start?: string | Date | moment.Moment, end?: string | Date | moment.Moment, label?: string) => any): JQuery;
+declare global {
+    interface JQuery {
+        daterangepicker(settings?: daterangepicker.Settings): JQuery;
+        daterangepicker(settings?: daterangepicker.Settings, callback?: (start?: string | Date | moment.Moment, end?: string | Date | moment.Moment, label?: string) => any): JQuery;
+    }
 }
 
 declare module daterangepicker {

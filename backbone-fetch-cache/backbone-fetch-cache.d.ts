@@ -3,7 +3,7 @@
 // Definitions by: delphinus <https://github.com/delphinus35/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
-/// <reference path="../backbone/backbone.d.ts" />
+/// <reference types="backbone" />
 
 declare namespace BackboneFetchCache {
 

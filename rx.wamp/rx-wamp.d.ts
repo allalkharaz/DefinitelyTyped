@@ -3,8 +3,9 @@
 // Definitions by: Elad Zelingher <https://github.com/darkl/>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
+/// <reference path="observable.d.ts" />
 import autobahn = require("autobahn");
-/// <reference types="rx"/>
+import * as Rx from "rx";
 
 declare global {
     interface IWampEvent {
@@ -40,10 +41,5 @@ declare global {
         errors: Rx.IObservable<autobahn.IError>;
         opened: Rx.IObservable<autobahn.ISubscription>;
     }
-
-    // Patch ObservableStatic to contain observableWamp methods.
-    namespace Rx {
-        interface ObservableStatic extends IObservableWampStatic {
-        }
-    }
 }
+

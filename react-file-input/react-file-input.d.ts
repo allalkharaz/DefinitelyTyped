@@ -12,7 +12,7 @@ declare module "react-file-input" {
         accept: string;
         placeholder: string;
         disabled?: boolean;
-        onChange: (event: React.SyntheticEvent) => void;
+        onChange: (event: React.SyntheticEvent<any>) => void;
     }
 
     class FileInput extends React.Component<FileInputProps, {}> {

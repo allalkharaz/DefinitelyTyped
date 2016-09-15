@@ -13,7 +13,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "files": [
-        "watchify.d.ts",
+        "index.d.ts",
         "watchify-tests.ts"
     ]
 }

@@ -14,7 +14,7 @@
         "forceConsistentCasingInFileNames": true
     },
     "files": [
-        "react-data-grid.d.ts",
+        "index.d.ts",
         "react-data-grid-tests.tsx"
     ]
 }
